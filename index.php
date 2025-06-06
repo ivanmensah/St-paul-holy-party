@@ -1,0 +1,199 @@
+<?php
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAINT PAUL HOLY PARTY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+    .hero-bg {
+      background-image: url('https://i.pinimg.com/736x/68/4b/33/684b3377e5527bda288311cea50ccb8b.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .event-img {
+      width: 50%;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  
+  <header class="bg-purple-900 text-white py-4">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold">SAINT PAUL HOLY PARTY</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#home" class="hover:text-yellow-300">Accueil</a></li>
+          <li><a href="#about" class="hover:text-yellow-300">À propos</a></li>
+          <li><a href="#program" class="hover:text-yellow-300">Programme</a></li>
+          <li><a href="#register" class="hover:text-yellow-300">Inscription</a></li>
+          <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+ 
+  <section id="home" class="hero-bg py-20 text-center text-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-5xl font-bold mb-4">Bienvenue à SAINT PAUL HOLY PARTY</h2>
+      <p class="text-xl mb-6">Un événement spirituel unique pour célébrer la foi, la prière et la communion.</p>
+      <a href="#program" class="bg-red-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-red-600">Découvrir le programme</a>
+    </div>
+  </section>
+
+ 
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-8">À propos de nous</h2>
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2">
+          <img src="mangotaika.jpg" alt="Prière communautaire" class="event-img mb-6">
+        </div>
+        <div class="md:w-1/2 md:pl-8">
+          <p class="text-lg mb-4">Depuis quelques années, on constate une baisse de l'engagement spirituel chez les jeunes 
+            catholiques. Face à ce constat, la communauté Saint Paul du district Abidjan Riviera Palmeraie 
+            (Mango Taïka) initie une entreprise communautaire visant à raviver la foi chrétienne à travers 
+            un cadre spirituel et fraternel. 
+            Le projet "SAINT PAUL HOLY PARTY" s’inscrit donc dans cette volonté de redynamisation, en 
+            mettant les jeunes au centre d’un événement marquant leur engagement envers Dieu. </p>
+          <p class="text-lg">Rejoignez-nous pour une expérience transformante où la prière et la musique s’unissent pour élever les âmes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="program" class="bg-gray-200 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-8">Programme de l'événement</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold mb-2">Jour 1 - Vendredi</h3>
+          <p class="text-lg mb-2"><strong>Date :</strong> 13 Juin 2025</p>
+          <p class="text-lg mb-2"><strong>Heure :</strong> 20h00 - 22h00</p>
+          <p class="text-lg">Une mini-veillée est organisée afin de bien entamer notre événement.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold mb-2">Jour 2 - Samedi</h3>
+          <p class="text-lg mb-2"><strong>Date :</strong> 14 Juin 2025</p>
+          <p class="text-lg mb-2"><strong>Heure :</strong> 8h00 - 18h00</p>
+          <p class="text-lg">Enseignement, louange et adoration, échanges et débats, activités interactifs (partage bibliques, quiz, etc.).</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold mb-2">Jour 3 - Dimanche</h3>
+          <p class="text-lg mb-2"><strong>Date :</strong> 15 Juin 2025</p>
+          <p class="text-lg mb-2"><strong>Heure :</strong> 10h30 - 14h00</p>
+          <p class="text-lg">Messe de clôture, partage et bénédiction finale.</p>
+        </div>
+        <div>
+          <img src="centreberythe.jpg" alt="Moment de prière" class="event-img">
+        </div>
+        <p class="text-lg">"Des stands de rafraîchissement sont à votre disposition pour vous redonner des forces durant cette journée."</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="register" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-8">Inscrivez-vous à l'événement</h2>
+      <p class="text-lg text-center mb-6">Confirmez votre présence à SAINT PAUL HOLY PARTY et recevez votre carte d'accès immédiatement.</p>
+      <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <form id="registrationForm" class="space-y-4">
+          <div>
+            <label for="lastName" class="block text-lg font-medium">Nom</label>
+            <input type="text" id="lastName" name="lastName" class="w-full p-2 border rounded-lg" placeholder="Votre nom" required>
+          </div>
+          <div>
+            <label for="firstName" class="block text-lg font-medium">Prénom(s)</label>
+            <input type="text" id="firstName" name="firstName" class="w-full p-2 border rounded-lg" placeholder="Votre prénom(s)" required>
+          </div>
+          <div>
+            <label for="email" class="block text-lg font-medium">Email</label>
+            <input type="email" id="email" name="email" class="w-full p-2 border rounded-lg" placeholder="Votre email" required>
+          </div>
+          <div>
+            <label for="attendance" class="block text-lg font-medium">Confirmer votre présence</label>
+            <select id="attendance" name="attendance" class="w-full p-2 border rounded-lg" required>
+              <option value="yes">Oui, je participerai</option>
+              <option value="no">Non, je ne participerai pas</option>
+            </select>
+          </div>
+          <button type="submit" id="registerBtn" class="w-full bg-red-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-red-600">Confirmer l'inscription</button>
+          <p id="confirmationMessage" class="text-center text-green-600 hidden">Inscription confirmée ! Votre carte d'accès est en cours de téléchargement...</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contact" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-8">Contactez-nous</h2>
+      <p class="text-lg text-center mb-6">Pour plus d'informations, contactez-nous :</p>
+      <div class="text-center">
+        <p class="text-lg mb-2"><strong>Email :</strong> aymardheli@gmail.com / mensahpierreivan41@gmail.com</p>
+        <p class="text-lg mb-2"><strong>Téléphone :</strong> +2250709536769 / +2250596957457</p>
+        <p class="text-lg"><strong>Adresse :</strong> <a href="https://maps.app.goo.gl/DR6ufWcgmERo5ht76" target="_blank" class="text-blue-600 hover:underline">Centre Mission Beryth, Riviera Attoban</a></p>
+      </div>
+    </div>
+  </section>
+
+ 
+  <footer class="bg-purple-900 text-white py-4">
+    <div class="container mx-auto px-4 text-center">
+      <p>© 2025 SAINT PAUL HOLY PARTY. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+
+  <script>
+  
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+ 
+    document.getElementById('registrationForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      
+      fetch('backend/register.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        const confirmationMessage = document.getElementById('confirmationMessage');
+        if (data.success) {
+          confirmationMessage.classList.remove('hidden');
+          confirmationMessage.textContent = data.message;
+
+          document.getElementById('registrationForm').reset();
+          document.getElementById('attendance').value = 'yes';
+        } else {
+          alert(data.message);
+        }
+      })
+      .catch(error => {
+        alert('Erreur lors de la soumission : ' + error.message);
+      });
+    });
+  </script>
+</body>
+</html>
+<?php
+?>
